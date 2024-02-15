@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.homecontainer{
+    padding-left: 2rem;
+    width: 100%;
+    height: 100vh;
+    background-image: url('image/rm380-12.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+.png{
+    animation: slide 1s ease-in-out infinite alternate;
+  }
+  @keyframes slide {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(15px);
+    }
+  }
+
+.homecontainer::before {  
+    content: '';
+    background: radial-gradient(#0F1932, transparent 0); 
+    background-size: 2px 2px; /* Smaller dots */
+    opacity: 0.4;         
+ }
+ .homecontainer::after { 
+    content: '';
+    height: 2px;
+    width: 60%; 
+     /* ... adjust positioning */
+ }
+  
+
+.text1 , .text2{
+    color: black;
+    font-family: 'Ubuntu',sans-serif;
+    padding: 2rem 0;
+
+}
+
+.text2{
+    font-size: 1.5rem;
+}
+
+.text1{
+    margin-top: 7rem;
+}
+
+.btn{
+    height: 2.5rem;
+    width: 9rem;
+    background-color: pink;
+    border-radius: 2rem;
+    color: black;
+    border: 2px solid purple;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease; 
+    
+}
+
+.btn:hover{
+    background-color: purple;
+    color: white;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    border: 1px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transform: translateY(-2px);
+}
+
+.twobtn{
+    display: flex;
+
+}
+
+.twobtn,
+.twod {
+   perspective: 600px; 
+}
+
+.download,
+.dashboard {
+   box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+   transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+.download:hover,
+.dashboard:hover {
+   box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+   transform: translateY(-2px);  
+}
+
+
+.oculuslogo{
+    height: 3rem;
+    width: 3rem;
+    padding: 0.4rem;
+   
+}
+.download, .dashboard{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    width: 10rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+
+.twod{
+    display: flex;
+    
+}
+
+.dashboard{
+    margin-left: 2rem;
+}
+
+button{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (max-width:390px) {
+    .twod{
+        flex-direction: column;
+    }
+
+    .download{
+        margin-left: 2rem;
+    }
+}
+
+
+
+.twobtn{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.poonabutton{
+    display: flex;
+    border: 1px solid grey;
+    height: 3rem;
+    text-align: center;    
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    color: blueviolet;
+    width: 40rem;
+
+}
+
+.addressbtn{
+    color: black;
+}
+

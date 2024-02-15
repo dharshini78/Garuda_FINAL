@@ -1,0 +1,227 @@
+.Navbar { 
+    z-index: 110;
+}
+
+/* Styles for the about page */
+.about-page {
+    background: #0F1932; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Styles for heading */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    color: #343a40; 
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.1); 
+    margin-bottom: 20px;
+}
+
+/* Styles for logo */
+.about-logo {
+    max-width: 200px;
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+    margin: 0 auto 30px; 
+    display: block; 
+}
+
+/* Styles for sections */
+section { 
+    border-bottom: 1px solid #0F1932; 
+    padding-bottom: 40px;    
+    margin-bottom: 40px; 
+}
+
+/* Styles for team members */
+#abdur-raheem {
+    background-image: url('/image/abdur-raheem.jpg');
+    background-size: cover;    
+    background-position: center;
+    width: 200px;
+    height: 250px;
+}
+#dharshini {
+    background-image: url('/image/dharshini.jpg');
+    background-size: cover;    
+    background-position: center;
+    width: 200px;
+    height: 250px;
+}
+
+/* General body styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0; 
+}
+
+/* Styles for the main about section */
+.about-section {
+    background: linear-gradient(to right, rgb(27,37,60), rgb(27,37,60)); 
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+}
+
+/* Container styles */
+.container {
+    max-width: 900px;
+    width: 100%; 
+}
+
+/* Styles for section titles */
+.section-title,
+.team-title {
+    color: #212529; 
+    font-size: 2.8em;
+    margin-bottom: 30px;
+}
+
+/* Styles for paragraphs */
+.para {
+    background: rgba(56, 70, 99, 0.2); 
+    backdrop-filter: blur(15px); 
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 10px 20px rgba(94, 92, 96, 0.1); 
+    text-align: left;
+}
+
+/* Styles for mission statement */
+.mission-statement {
+    background: rgba(48, 28, 200, 0.3); 
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(118, 117, 118, 0.3); 
+}
+
+/* Styles for team grid */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 40px; 
+}
+
+/* Styles for individual team members */
+.team-member {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 10px 20px rgba(147, 145, 150, 0.3); 
+    max-width: 280px;
+    text-align: center;
+}
+
+/* Styles for team member names */
+.team-member h4 {
+    color: #1A5276;
+}
+
+/* Styles for team member roles */
+.team-member p {
+    margin-top: 5px; 
+}
+
+/* Styles for section titles */
+.section-title {
+    background: linear-gradient(to right, #e3a8de, #d62fad); 
+    -webkit-background-clip: text;
+    background-clip: text;  
+    -webkit-text-fill-color: transparent; 
+    font-size: 4em;
+}
+
+/* Styles for team titles */
+.team-title {
+    background: linear-gradient(to right, #d691d0, #d62fad); 
+    -webkit-background-clip: text;
+    background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    margin-top: 40px;
+}
+
+/* Styles for mission statement titles */
+.mission-statement h2 {
+    text-shadow: 
+        2px 2px 2px rgba(12, 204, 237, 0.8), 
+        -2px -2px 3px rgba(251, 3, 3, 0.3);  
+   font-size: 2.5em;
+   margin-top: 40px;
+}
+
+/* Styles for section title hover effects */
+.about-section .section-title {
+    position: relative; 
+    display: inline-block;
+}
+
+.about-section .section-title::after { 
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%; 
+    height: 3px;
+    background-color: #ED213A; 
+    transition: width 0.4s ease-in-out; 
+}
+
+.about-section .section-title:hover::after { 
+    width: 0; 
+}
+
+/* Styles for hover effects on paragraphs, mission statements, and team members */
+.para:hover, 
+.mission-statement:hover, 
+.team-member:hover {
+   box-shadow: 0 5px 10px rgba(0,0,0,0.08), 
+               0 10px 20px rgba(118, 116, 120, 0.5); 
+}
+
+/* General paragraph styles */
+.para,
+.mission-statement {
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(15px); 
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 10px 20px rgba(94, 92, 96, 0.3); 
+    text-align: left;
+}
+
+/* General paragraph text styles */
+.para p, 
+.mission-statement p{ 
+    color: #333; 
+    font-size: 18px; 
+    line-height: 1.6; 
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.button {
+    background-color: #0F1932; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover styles */
+.button:hover {
+    background-color:#E2AD24; 
+}
